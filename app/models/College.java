@@ -11,7 +11,7 @@ import java.util.List;
  * Time: 22:02
  * To change this template use File | Settings | File Templates.
  */
-public class College extends Model {
+public class College extends AbstractClassMasterModel {
 
     public Address address;
     public String phone;

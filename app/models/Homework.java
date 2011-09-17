@@ -11,15 +11,13 @@ import java.util.Date;
  * Time: 21:51
  * To change this template use File | Settings | File Templates.
  */
-public class Homework extends Model {
+public class Homework extends AbstractClassMasterModel {
 
+    public Student student;
+    public Subject subject;
     public Document document;
     public Date deliveredOn;
-    public Date dueDate;
     public int grade;
     public boolean isDeliveryExceeded;
     public boolean isRated;
-    public boolean isDraft;
-
-
 }

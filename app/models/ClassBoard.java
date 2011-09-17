@@ -11,11 +11,11 @@ import java.util.List;
  * Time: 22:20
  * To change this template use File | Settings | File Templates.
  */
-public class ClassBoard extends Model {
+public class ClassBoard extends AbstractClassMasterModel {
 
     public Schedule schedule;
     public List<Student> students;
     public List<Teacher> teachers;
-    public List<Message> messages;
+    public List<Thread> threads;
 
 }

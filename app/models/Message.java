@@ -11,12 +11,14 @@ import java.util.Date;
  * Time: 22:17
  * To change this template use File | Settings | File Templates.
  */
-public class Message extends Model {
+public class Message extends AbstractClassMasterModel {
 
+    public Person author;
     public String title;
     public String message;
     public Date showFrom;
     public Date showUntil;
 
     public boolean isDraft;
+
 }

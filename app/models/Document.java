@@ -9,7 +9,7 @@ import play.db.jpa.Model;
  * Time: 21:51
  * To change this template use File | Settings | File Templates.
  */
-public class Document extends Model {
+public class Document extends AbstractClassMasterModel {
 
     public byte[] document;
 

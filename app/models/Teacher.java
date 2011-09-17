@@ -11,7 +11,7 @@ import java.util.List;
  * Time: 21:47
  * To change this template use File | Settings | File Templates.
  */
-public class Teacher extends Model {
+public class Teacher extends Person {
 
     public List<Subject> teachingSubjects;
     public List<Homework> publishedHomework;

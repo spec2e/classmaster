@@ -11,7 +11,7 @@ import java.util.List;
  * Time: 22:05
  * To change this template use File | Settings | File Templates.
  */
-public class Course extends Model {
+public class Course extends AbstractClassMasterModel {
 
     public String courseName;
     public List<Teacher> teachers;

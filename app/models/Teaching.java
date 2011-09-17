@@ -11,7 +11,7 @@ import java.util.Date;
  * Time: 22:12
  * To change this template use File | Settings | File Templates.
  */
-public class Teaching extends Model {
+public class Teaching extends AbstractClassMasterModel {
 
     public Course course;
     public Date startTime;
