@@ -20,4 +20,5 @@ public class Homework extends AbstractClassMasterModel {
     public int grade;
     public boolean isDeliveryExceeded;
     public boolean isRated;
+    public Thread feedback;
 }
