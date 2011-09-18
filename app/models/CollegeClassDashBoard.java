@@ -1,6 +1,7 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 /**
@@ -14,6 +15,7 @@ import java.util.List;
 public class CollegeClassDashBoard extends AbstractClassMasterModel {
 
     public CollegeClass collegeClass;
+    @OneToMany
     public List<Thread> threads;
 
 }

@@ -1,6 +1,8 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.Date;
 import java.util.List;
 
@@ -14,14 +16,19 @@ import java.util.List;
 @Entity
 public class Assignment extends AbstractClassMasterModel {
 
+    @ManyToOne
     public Teacher teacher;
+    @ManyToOne
     public Course course;
     public Date publish;
     public Date delivery;
     public Date extendedDelivery;
     public boolean closedForDelivery;
+    @ManyToOne
     public Message message;
+    @OneToMany
     public List<Homework> deliveredHomework;
+    @OneToMany
     public List<Thread> thread;
     public boolean isDraft;
 

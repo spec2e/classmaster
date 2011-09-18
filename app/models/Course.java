@@ -1,6 +1,6 @@
 package models;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -13,9 +13,11 @@ import java.util.List;
 @Entity
 public class Course extends AbstractClassMasterModel {
 
-    public String courseName;
+    @ManyToMany(targetEntity = Teacher.class, mappedBy = "courses")
     public List<Teacher> teachers;
+    @ManyToMany(targetEntity = Student.class, mappedBy = "courses")
     public List<Student> students;
+    @OneToOne
     public Message description;
 
 

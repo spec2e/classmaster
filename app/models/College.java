@@ -1,6 +1,8 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.List;
 
 /**
@@ -14,10 +16,13 @@ import java.util.List;
 public class College extends AbstractClassMasterModel {
 
     public String name;
+    @OneToOne
     public Address address;
     public String phone;
 
+    @OneToMany
     public List<Course> courses;
+    @OneToMany
     public List<CollegeClass> classes;
 
 }

@@ -3,6 +3,8 @@ package models;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 /**
@@ -15,9 +17,12 @@ import java.util.List;
 @Entity
 public class Teacher extends Person {
 
+    @ManyToMany
     public List<Course> courses;
-    public List<Homework> publishedHomework;
-    public List<Homework> homeworkDrafts;
+    @OneToMany
+    public List<Assignment> publishedAssignments;
+    @OneToMany
+    public List<Assignment> assignmentDrafts;
 
 
 }

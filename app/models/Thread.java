@@ -1,6 +1,7 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.Date;
 import java.util.List;
 
@@ -18,5 +19,6 @@ public class Thread extends AbstractClassMasterModel {
     public Date endDate;
     public boolean isClosed;
 
+    @OneToMany
     public List<Message> messages;
 }

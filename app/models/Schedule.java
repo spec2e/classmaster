@@ -1,6 +1,8 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 /**
@@ -13,5 +15,6 @@ import java.util.List;
 @Entity
 public class Schedule extends AbstractClassMasterModel {
 
+    @OneToMany
     public List<TeachingDay> teachingDays;
 }
