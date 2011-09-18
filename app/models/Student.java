@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Entity;
 import java.util.List;
 
 /**
@@ -9,8 +10,10 @@ import java.util.List;
  * Time: 21:46
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Student extends Person {
 
+    public List<Course> courses;
     public List<Homework> deliveredHomework;
     public List<Homework> homework;
 

@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Entity;
 import java.util.Date;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * Time: 08:20
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Thread extends AbstractClassMasterModel {
 
     public Date startDate;

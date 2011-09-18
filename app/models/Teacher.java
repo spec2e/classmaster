@@ -2,6 +2,7 @@ package models;
 
 import play.db.jpa.Model;
 
+import javax.persistence.Entity;
 import java.util.List;
 
 /**
@@ -11,9 +12,10 @@ import java.util.List;
  * Time: 21:47
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Teacher extends Person {
 
-    public List<Subject> teachingSubjects;
+    public List<Course> courses;
     public List<Homework> publishedHomework;
     public List<Homework> homeworkDrafts;
 

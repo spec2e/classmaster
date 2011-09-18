@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Entity;
 import java.util.List;
 
 /**
@@ -9,6 +10,7 @@ import java.util.List;
  * Time: 22:12
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class TeachingDay extends AbstractClassMasterModel {
 
     public String day;

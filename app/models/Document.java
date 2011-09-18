@@ -1,5 +1,7 @@
 package models;
 
+import javax.persistence.Entity;
+
 /**
  * Created by IntelliJ IDEA.
  * User: dev
@@ -7,6 +9,7 @@ package models;
  * Time: 21:51
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Document extends AbstractClassMasterModel {
 
     public byte[] document;

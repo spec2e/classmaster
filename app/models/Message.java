@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
 /**
@@ -9,6 +10,7 @@ import java.util.Date;
  * Time: 22:17
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Message extends AbstractClassMasterModel {
 
     public Person author;

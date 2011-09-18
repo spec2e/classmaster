@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Entity;
 import java.util.Date;
 import java.util.List;
 
@@ -10,10 +11,11 @@ import java.util.List;
  * Time: 08:37
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Assignment extends AbstractClassMasterModel {
 
     public Teacher teacher;
-    public Subject subject;
+    public Course course;
     public Date publish;
     public Date delivery;
     public Date extendedDelivery;
