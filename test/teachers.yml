@@ -1,0 +1,16 @@
+
+Teacher(pia):
+  email: piaborch@yahoo.dk
+  mobile : 22 39 75 64
+  userName : piaborch@yahoo.dk
+  password : qq
+  firstName : Pia Vibeke Borch
+  lastName : Pedersen
+
+Teacher(annette):
+  email: ann@skoleintra.dk
+  mobile : 22 33 44 55
+  userName : ann@skoleintra.dk
+  password : ee
+  firstName : Annette
+  lastName : Jensen

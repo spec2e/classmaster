@@ -1,0 +1,4 @@
+
+CollegeClass(class8):
+  students: [elev1, elev2]
+  teachers: [pia, annette]

@@ -1,0 +1,11 @@
+Address(ganløseskoleaddress):
+  line1: Ganløseskole
+  line2: Skolevej 1
+  line3: 3620 Ganløse
+  line4: Egedal kommune
+
+College(ganløseskole):
+  name: Ganløse skole
+  address: ganløseskoleaddress
+  phone: 70 23 55 66
+  classes: class8

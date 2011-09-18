@@ -1,0 +1,24 @@
+
+Address(elev1address):
+  line1: Elev1 Jensen
+  line2: Bygaden 127 2tv
+  line4: 3620 Ganløse
+
+Student(elev1):
+  address: elev1address
+  firstName: Elev1
+  lastName: Jensen
+  email: elev1@mail.dk
+  mobil: 11223344
+
+Address(elev2address):
+  line1: Elev2 Jensen
+  line2: Testaden 127 2tv
+  line4: 3800 Testby
+
+Student(elev2):
+  address: elev2address
+  firstName: Elev2
+  lastName: Larsen
+  email: elev2@mail.dk
+  mobil: 11244344
