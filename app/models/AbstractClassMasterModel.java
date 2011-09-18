@@ -1,6 +1,9 @@
 package models;
 
+import play.db.jpa.GenericModel;
 import play.db.jpa.Model;
+
+import javax.persistence.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,8 +12,23 @@ import play.db.jpa.Model;
  * Time: 08:29
  * To change this template use File | Settings | File Templates.
  */
-public class AbstractClassMasterModel extends Model {
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class AbstractClassMasterModel extends GenericModel {
 
-    public boolean isDeleted;
+    public boolean deleted;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
+    public Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public Object _key() {
+        return getId();
+    }
 
 }

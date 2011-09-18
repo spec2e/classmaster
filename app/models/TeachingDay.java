@@ -16,14 +16,16 @@ import java.util.List;
 public class TeachingDay extends AbstractClassMasterModel {
 
     public String day;
+    /*
     @OneToMany
     public List<Teaching> teachings;
-    @ManyToOne
+      */
     public Message message;
-    public boolean isCancelled;
-    public boolean isAlternative;
+    public boolean cancelled;
+    public boolean alternative;
+    /*
     @OneToMany
     public List<Teaching> alternativeTeachings;
-
+      */
 
 }

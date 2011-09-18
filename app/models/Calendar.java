@@ -1,5 +1,7 @@
 package models;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 /**
@@ -9,8 +11,10 @@ import java.util.List;
  * Time: 22:24
  * To change this template use File | Settings | File Templates.
  */
+@Entity
 public class Calendar extends AbstractClassMasterModel {
 
+    @OneToMany
     public List<TeachingDay> teachingDays;
 
 }

@@ -35,7 +35,9 @@
           <root url="jar://C:/tools/play-1.2.1/framework/play-1.2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://C:/tools/play-1.2.1/framework/src" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>

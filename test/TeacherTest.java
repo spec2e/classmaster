@@ -16,6 +16,7 @@ public class TeacherTest extends UnitTest {
 
     @Test
     public void loadTeachers() {
+        Fixtures.deleteAllModels();
         Fixtures.loadModels("data.yml");
 
         List<Teacher> teachers = Teacher.findAll();

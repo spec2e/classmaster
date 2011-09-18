@@ -29,12 +29,12 @@ Address(elev1address):
   line2: Bygaden 127 2tv
   line4: 3620 Ganløse
 
-Student(elev1):
-  address: elev1address
-  firstName: Elev1
-  lastName: Jensen
-  email: elev1@mail.dk
-  mobil: 11223344
+#Student(elev1):
+#  address: elev1address
+#  firstName: Elev1
+#  lastName: Jensen
+#  email: elev1@mail.dk
+#  mobil: 11223344
 
 Address(elev2address):
   line1: Elev2 Jensen
@@ -42,15 +42,15 @@ Address(elev2address):
   line4: 3800 Testby
 
 Student(elev2):
-  address: elev2address
-  firstName: Elev2
-  lastName: Larsen
-  email: elev2@mail.dk
-  mobil: 11244344
+#  address: elev2address
+#  firstName: Elev2
+#  lastName: Larsen
+#  email: elev2@mail.dk
+#  mobil: 11244344
 
 CollegeClass(class8):
-  students: elev1, elev2
-  teachers: pia, annette
+  #students: [elev1, elev2]
+  teachers: [pia, annette]
 
 Address(ganløseskoleaddress):
   line1: Ganløseskole

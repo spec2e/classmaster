@@ -13,9 +13,9 @@ import java.util.List;
 @Entity
 public class Course extends AbstractClassMasterModel {
 
-    @ManyToMany(targetEntity = Teacher.class, mappedBy = "courses")
+    @ManyToMany(mappedBy = "courses")
     public List<Teacher> teachers;
-    @ManyToMany(targetEntity = Student.class, mappedBy = "courses")
+    @ManyToMany(mappedBy = "courses")
     public List<Student> students;
     @OneToOne
     public Message description;
