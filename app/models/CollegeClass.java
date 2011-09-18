@@ -5,17 +5,14 @@ import java.util.List;
 /**
  * Created by IntelliJ IDEA.
  * User: dev
- * Date: 14-09-11
- * Time: 22:05
+ * Date: 18-09-11
+ * Time: 10:23
  * To change this template use File | Settings | File Templates.
  */
-public class Course extends AbstractClassMasterModel {
+public class CollegeClass extends AbstractClassMasterModel {
 
-    public String courseName;
-    public List<Teacher> teachers;
+    public Schedule schedule;
     public List<Student> students;
-    public Message description;
-
-
+    public List<Teacher> teachers;
 
 }

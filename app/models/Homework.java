@@ -1,7 +1,5 @@
 package models;
 
-import play.db.jpa.Model;
-
 import java.util.Date;
 
 /**
