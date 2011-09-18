@@ -20,6 +20,12 @@ public class Course extends AbstractClassMasterModel {
     @OneToOne
     public Message description;
 
-
-
+    @Override
+    public String toString() {
+        return "Course{" +
+                "teachers=" + teachers +
+                ", students=" + students +
+                ", description=" + description +
+                '}';
+    }
 }

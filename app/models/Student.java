@@ -23,5 +23,12 @@ public class Student extends Person {
     public List<Homework> homework;
 
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "courses=" + courses +
+                ", deliveredHomework=" + deliveredHomework +
+                ", homework=" + homework +
+                '}';
+    }
 }

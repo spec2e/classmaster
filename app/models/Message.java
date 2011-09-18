@@ -14,13 +14,23 @@ import java.util.Date;
 @Entity
 public class Message extends AbstractClassMasterModel {
 
-    @ManyToOne
     public Person author;
     public String title;
     public String message;
     public Date showFrom;
     public Date showUntil;
 
-    public boolean isDraft;
+    public boolean draft;
 
+    @Override
+    public String toString() {
+        return "Message{" +
+                "author=" + author +
+                ", title='" + title + '\'' +
+                ", message='" + message + '\'' +
+                ", showFrom=" + showFrom +
+                ", showUntil=" + showUntil +
+                ", draft=" + draft +
+                '}';
+    }
 }

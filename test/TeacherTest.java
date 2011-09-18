@@ -12,15 +12,15 @@ import java.util.List;
  * Time: 11:22
  * To change this template use File | Settings | File Templates.
  */
-public class TeacherTest extends UnitTest {
+public class TeacherTest extends AbstractClassMasterTest {
 
     @Test
     public void loadTeachers() {
-        Fixtures.deleteAllModels();
-        Fixtures.loadModels("teachers.yml", "students.yml", "collegeclasses.yml", "colleges.yml", "schedules.yml");
+
+        loadYamlData();
 
         List<Teacher> teachers = Teacher.findAll();
-
+        System.out.println("teachers = " + teachers);
         assertEquals(2, teachers.size());
 
     }

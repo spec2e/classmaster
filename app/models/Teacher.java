@@ -24,5 +24,12 @@ public class Teacher extends Person {
     @OneToMany
     public List<Assignment> assignmentDrafts;
 
-
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "courses=" + courses +
+                ", publishedAssignments=" + publishedAssignments +
+                ", assignmentDrafts=" + assignmentDrafts +
+                '}';
+    }
 }

@@ -1,0 +1,37 @@
+
+
+Message(mathmessage):
+  author: annette
+  title: Velkommen til matematik
+  message: Dette er beskeden
+  showFrom: 2011-12-31
+  showUntil: 2012-05-30
+
+Course(math):
+  teachers: [annette]
+  students: [elev1, elev2]
+  description: mathmessage
+
+Message(frenchmessage):
+  author: pia
+  title: Velkommen til Fransk
+  message: Fransk er et sprog...
+  showFrom: 2011-08-15
+  showUntil: 2012-06-20
+
+Course(french):
+  teachers: [pia]
+  students: [elev1, elev2]
+  description: frenchmessage
+
+Message(danishmessage):
+  author: pia
+  title: Velkommen til dansk
+  message: Vi er to lærere, der....
+  showFrom: 2011-08-10
+  showUntil: 2012-06-01
+
+Course(danish):
+  teachers: [pia, annette]
+  students: [elev1, elev2]
+  description: danishmessage
