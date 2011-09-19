@@ -17,4 +17,11 @@ public class Schedule extends AbstractClassMasterModel {
 
     @OneToMany
     public List<TeachingDay> teachingDays;
+
+    @Override
+    public String toString() {
+        return "Schedule{" +
+                "teachingDays=" + teachingDays +
+                '}';
+    }
 }

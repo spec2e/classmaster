@@ -21,4 +21,18 @@ public class Homework extends AbstractClassMasterModel {
     public boolean isDeliveryExceeded;
     public boolean isRated;
     public Thread feedback;
+
+    @Override
+    public String toString() {
+        return "Homework{" +
+                "student=" + student +
+                ", course=" + course +
+                ", document=" + document +
+                ", deliveredOn=" + deliveredOn +
+                ", grade=" + grade +
+                ", isDeliveryExceeded=" + isDeliveryExceeded +
+                ", isRated=" + isRated +
+                ", feedback=" + feedback +
+                '}';
+    }
 }

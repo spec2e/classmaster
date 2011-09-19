@@ -20,7 +20,6 @@ public class TeacherTest extends AbstractClassMasterTest {
         loadYamlData();
 
         List<Teacher> teachers = Teacher.findAll();
-        System.out.println("teachers = " + teachers);
         assertEquals(2, teachers.size());
 
     }

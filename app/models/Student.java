@@ -1,8 +1,6 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -21,11 +19,12 @@ public class Student extends Person {
     public List<Homework> deliveredHomework;
     @OneToMany
     public List<Homework> homework;
-
+    @ManyToOne
+    public Address address;
 
     @Override
     public String toString() {
-        return "Student{" +
+        return super.toString() + "\nStudent{" +
                 "courses=" + courses +
                 ", deliveredHomework=" + deliveredHomework +
                 ", homework=" + homework +

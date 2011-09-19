@@ -19,4 +19,14 @@ public class Teaching extends AbstractClassMasterModel {
     public boolean isBreak;
     public Message message;
 
+    @Override
+    public String toString() {
+        return "Teaching{" +
+                "course=" + course +
+                ", startTime=" + startTime +
+                ", endTime=" + endTime +
+                ", isBreak=" + isBreak +
+                ", message=" + message +
+                '}';
+    }
 }

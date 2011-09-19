@@ -24,4 +24,13 @@ public class CollegeClass extends AbstractClassMasterModel {
     @OneToOne
     public CollegeClassDashBoard classBoard;
 
+    @Override
+    public String toString() {
+        return "CollegeClass{" +
+                "schedule=" + schedule +
+                ", students=" + students +
+                ", teachers=" + teachers +
+                ", classBoard=" + classBoard +
+                '}';
+    }
 }

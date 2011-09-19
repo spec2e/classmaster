@@ -25,4 +25,14 @@ public class College extends AbstractClassMasterModel {
     @OneToMany
     public List<CollegeClass> classes;
 
+    @Override
+    public String toString() {
+        return "College{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                ", phone='" + phone + '\'' +
+                ", courses=" + courses +
+                ", classes=" + classes +
+                '}';
+    }
 }

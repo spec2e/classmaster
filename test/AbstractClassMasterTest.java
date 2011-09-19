@@ -1,3 +1,4 @@
+import play.db.jpa.JPA;
 import play.test.Fixtures;
 import play.test.UnitTest;
 
@@ -13,14 +14,17 @@ public abstract class AbstractClassMasterTest extends UnitTest {
     public void loadYamlData() {
 
         Fixtures.deleteAllModels();
+        Fixtures.loadModels("yml/classmaster.yml");
+        /*
         Fixtures.loadModels(
                 "yml/teachers.yml",
                 "yml/students.yml",
-                "yml/collegeclasses.yml",
-                "yml/colleges.yml",
                 "yml/courses.yml",
-                "yml/schedules.yml"
-        );
+                "yml/schedules.yml",
+                "yml/collegeclasses.yml",
+                "yml/colleges.yml"
+        );*/
+        JPA.em().flush();
     }
 
 }

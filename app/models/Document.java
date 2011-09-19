@@ -1,6 +1,7 @@
 package models;
 
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 
 /**
  * Created by IntelliJ IDEA.
@@ -12,6 +13,7 @@ import javax.persistence.Entity;
 @Entity
 public class Document extends AbstractClassMasterModel {
 
+    @Lob
     public byte[] document;
 
 

@@ -26,7 +26,8 @@ public class Teacher extends Person {
 
     @Override
     public String toString() {
-        return "Teacher{" +
+
+        return super.toString() + "\n Teacher{" +
                 "courses=" + courses +
                 ", publishedAssignments=" + publishedAssignments +
                 ", assignmentDrafts=" + assignmentDrafts +

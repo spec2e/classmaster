@@ -22,6 +22,16 @@ public abstract class Person extends Model {
     public String mobile;
     public String userName;
     public String password;
-    public boolean active;
-    public boolean deleted;
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

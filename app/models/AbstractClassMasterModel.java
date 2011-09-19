@@ -17,6 +17,7 @@ import javax.persistence.*;
 public class AbstractClassMasterModel extends GenericModel {
 
     public boolean deleted;
+    public boolean active;
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)

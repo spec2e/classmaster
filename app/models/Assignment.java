@@ -32,4 +32,19 @@ public class Assignment extends AbstractClassMasterModel {
     public List<Thread> thread;
     public boolean isDraft;
 
+    @Override
+    public String toString() {
+        return "Assignment{" +
+                "teacher=" + teacher +
+                ", course=" + course +
+                ", publish=" + publish +
+                ", delivery=" + delivery +
+                ", extendedDelivery=" + extendedDelivery +
+                ", closedForDelivery=" + closedForDelivery +
+                ", message=" + message +
+                ", deliveredHomework=" + deliveredHomework +
+                ", thread=" + thread +
+                ", isDraft=" + isDraft +
+                '}';
+    }
 }

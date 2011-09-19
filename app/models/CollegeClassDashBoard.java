@@ -18,4 +18,11 @@ public class CollegeClassDashBoard extends AbstractClassMasterModel {
     @OneToMany
     public List<Thread> threads;
 
+    @Override
+    public String toString() {
+        return "CollegeClassDashBoard{" +
+                "collegeClass=" + collegeClass +
+                ", threads=" + threads +
+                '}';
+    }
 }

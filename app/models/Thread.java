@@ -21,4 +21,14 @@ public class Thread extends AbstractClassMasterModel {
 
     @OneToMany
     public List<Message> messages;
+
+    @Override
+    public String toString() {
+        return "Thread{" +
+                "startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", isClosed=" + isClosed +
+                ", messages=" + messages +
+                '}';
+    }
 }
