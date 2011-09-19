@@ -1,0 +1,85 @@
+
+#TEACHERS
+
+Teacher(pia):
+  email: piaborch@yahoo.dk
+  mobile : 22 39 75 64
+  userName : piaborch@yahoo.dk
+  password : qq
+  firstName : Pia Vibeke Borch
+  lastName : Pedersen
+
+Teacher(annette):
+  email: ann@skoleintra.dk
+  mobile : 22 33 44 55
+  userName : ann@skoleintra.dk
+  password : ee
+  firstName : Annette
+  lastName : Jensen
+
+
+#STUDENTS
+
+Address(elev1address):
+  line1: Elev1 Jensen
+  line2: Bygaden 127 2tv
+  line4: 3620 Ganløse
+
+Student(elev1):
+  address: elev1address
+  firstName: Elev1
+  lastName: Jensen
+  email: elev1@mail.dk
+  mobil: 11223344
+
+Address(elev2address):
+  line1: Elev2 Jensen
+  line2: Testaden 127 2tv
+  line4: 3800 Testby
+
+Student(elev2):
+  address: elev2address
+  firstName: Elev2
+  lastName: Larsen
+  email: elev2@mail.dk
+  mobil: 11244344
+
+# Courses
+
+Message(mathmessage):
+  author: annette
+  title: Velkommen til matematik
+  message: Dette er beskeden
+  showFrom: 2011-12-31
+  showUntil: 2012-05-30
+
+Course(math):
+  teachers: [annette]
+  students: [elev1, elev2]
+  description: mathmessage
+
+Message(frenchmessage):
+  author: pia
+  title: Velkommen til Fransk
+  message: Fransk er et sprog...
+  showFrom: 2011-08-15
+  showUntil: 2012-06-20
+
+Course(french):
+  teachers: [pia]
+  students: [elev1, elev2]
+  description: frenchmessage
+
+Message(danishmessage):
+  author: pia
+  title: Velkommen til dansk
+  message: Vi er to lærere, der....
+  showFrom: 2011-08-10
+  showUntil: 2012-06-01
+
+Course(danish):
+  teachers: [pia, annette]
+  students: [elev1, elev2]
+  description: danishmessage
+
+#
