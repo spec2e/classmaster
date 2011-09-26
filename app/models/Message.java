@@ -2,6 +2,7 @@ package models;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.Date;
 
 /**
@@ -14,6 +15,7 @@ import java.util.Date;
 @Entity
 public class Message extends AbstractClassMasterModel {
 
+    @ManyToOne
     public Person author;
     public String title;
     public String message;

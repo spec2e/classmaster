@@ -8,7 +8,7 @@ Message(mathmessage):
   showUntil: 2012-05-30
 
 Course(math):
-  teachers: [annette]
+  teachers: annette
   students: [elev1, elev2]
   description: mathmessage
 
@@ -20,7 +20,7 @@ Message(frenchmessage):
   showUntil: 2012-06-20
 
 Course(french):
-  teachers: [pia]
+  teachers: pia
   students: [elev1, elev2]
   description: frenchmessage
 

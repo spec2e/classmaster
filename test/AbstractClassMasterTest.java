@@ -14,8 +14,8 @@ public abstract class AbstractClassMasterTest extends UnitTest {
     public void loadYamlData() {
 
         Fixtures.deleteAllModels();
-        Fixtures.loadModels("yml/classmaster.yml");
-        /*
+        //Fixtures.loadModels("yml/classmaster.yml");
+
         Fixtures.loadModels(
                 "yml/teachers.yml",
                 "yml/students.yml",
@@ -23,7 +23,7 @@ public abstract class AbstractClassMasterTest extends UnitTest {
                 "yml/schedules.yml",
                 "yml/collegeclasses.yml",
                 "yml/colleges.yml"
-        );*/
+        );
         JPA.em().flush();
     }
 

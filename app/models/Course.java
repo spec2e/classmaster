@@ -13,19 +13,18 @@ import java.util.List;
 @Entity
 public class Course extends AbstractClassMasterModel {
 
-    @ManyToMany(mappedBy = "courses")
+    @ManyToMany
     public List<Teacher> teachers;
-    @ManyToMany(mappedBy = "courses")
+
+    @ManyToMany
     public List<Student> students;
+
     @OneToOne
     public Message description;
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "teachers=" + teachers +
-                ", students=" + students +
-                ", description=" + description +
-                '}';
+    public static List<Course> getCourses() {
+        return Course.findAll();
     }
+
+
 }

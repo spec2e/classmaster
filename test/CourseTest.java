@@ -18,18 +18,21 @@ public class CourseTest extends AbstractClassMasterTest {
 
         loadYamlData();
 
-        List<Course> courses = Course.findAll();
+        List<Course> courses = Course.getCourses();
+        assertEquals(3, courses.size());
 
         for (Course course : courses) {
             List<Teacher> teachers = course.teachers;
+            System.out.println("teachers.size = " + teachers.size());
+
             for (Teacher teacher : teachers) {
                 System.out.println("teacher = " + teacher);
             }
-            System.out.println("course.description = " + course.description);
+            System.out.println("course.description.author = " + course.description.author.firstName);
 
         }
 
-        assertEquals(3, courses.size());
+
 
     }
 }

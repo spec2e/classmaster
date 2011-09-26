@@ -5,6 +5,8 @@ import play.db.jpa.Model;
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.ManyToMany;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,14 +16,14 @@ import javax.persistence.InheritanceType;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Person extends Model {
+public abstract class Person extends AbstractClassMasterModel {
     public String firstName;
     public String lastName;
     public String email;
     public String mobile;
     public String userName;
     public String password;
+
 
     @Override
     public String toString() {

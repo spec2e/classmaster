@@ -2,9 +2,7 @@ package models;
 
 import play.db.jpa.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -17,7 +15,7 @@ import java.util.List;
 @Entity
 public class Teacher extends Person {
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "teachers", cascade = CascadeType.ALL)
     public List<Course> courses;
     @OneToMany
     public List<Assignment> publishedAssignments;

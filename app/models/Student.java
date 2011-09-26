@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 public class Student extends Person {
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "students", cascade = CascadeType.ALL)
     public List<Course> courses;
     @OneToMany
     public List<Homework> deliveredHomework;
