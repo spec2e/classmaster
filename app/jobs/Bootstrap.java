@@ -1,5 +1,6 @@
 package jobs;
 
+import models.Teacher;
 import play.jobs.Job;
 import play.jobs.OnApplicationStart;
 import play.test.Fixtures;
@@ -16,6 +17,8 @@ public class Bootstrap extends Job {
 
     @Override
     public void doJob() throws Exception {
+
+        Fixtures.deleteAllModels();
         Fixtures.loadModels(
                 "yml/teachers.yml",
                 "yml/students.yml",
@@ -24,5 +27,7 @@ public class Bootstrap extends Job {
                 "yml/collegeclasses.yml",
                 "yml/colleges.yml"
         );
+
+
     }
 }

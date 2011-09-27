@@ -15,8 +15,10 @@ import java.util.List;
  * Time: 21:48
  * To change this template use File | Settings | File Templates.
  */
+
 @Entity
-public abstract class Person extends AbstractClassMasterModel {
+public class Person extends AbstractClassMasterModel {
+
     public String firstName;
     public String lastName;
     public String email;
@@ -24,16 +26,8 @@ public abstract class Person extends AbstractClassMasterModel {
     public String userName;
     public String password;
 
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", mobile='" + mobile + '\'' +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+    public static Person findByUserName(String userName) {
+        return find("from Person p where p.userName = '" + userName + "'").first();
     }
+
 }

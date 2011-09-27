@@ -9,7 +9,9 @@ package controllers;
  */
 
 import models.Student;
+import play.mvc.With;
 
+@With(Secure.class)
 @CRUD.For(Student.class)
 public class StudentsController extends CRUD {
 }

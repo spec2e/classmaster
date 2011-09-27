@@ -1,3 +1,4 @@
+import models.Person;
 import models.Teacher;
 import org.junit.Test;
 import play.test.Fixtures;
@@ -28,6 +29,8 @@ public class TeacherTest extends AbstractClassMasterTest {
         teacher = teachers.get(1);
         assertEquals("Annette", teacher.firstName);
 
+        Person p = Person.findByUserName("piaborch@yahoo.dk");
+        assertNotNull(p);
 
     }
 }

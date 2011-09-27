@@ -9,7 +9,9 @@ package controllers;
  */
 
 import models.Schedule;
+import play.mvc.With;
 
+@With(Secure.class)
 @CRUD.For(Schedule.class)
 public class SchedulesController extends CRUD{
 }
