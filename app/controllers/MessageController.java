@@ -1,6 +1,6 @@
 package controllers;
 
-import play.mvc.Controller;
+import models.Message;
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,5 +9,6 @@ import play.mvc.Controller;
  * Time: 10:31
  * To change this template use File | Settings | File Templates.
  */
-public class MessageController extends Controller {
+@CRUD.For(Message.class)
+public class MessageController extends CRUD {
 }

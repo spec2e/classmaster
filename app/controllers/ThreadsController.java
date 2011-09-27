@@ -1,7 +1,5 @@
 package controllers;
 
-import play.mvc.Controller;
-
 /**
  * Created by IntelliJ IDEA.
  * User: dev
@@ -9,5 +7,6 @@ import play.mvc.Controller;
  * Time: 10:33
  * To change this template use File | Settings | File Templates.
  */
-public class ThreadsController extends Controller {
+@CRUD.For(models.Thread.class)
+public class ThreadsController extends CRUD {
 }

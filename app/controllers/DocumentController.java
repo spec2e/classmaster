@@ -1,6 +1,6 @@
 package controllers;
 
-import play.mvc.Controller;
+import models.Document;
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,5 +9,6 @@ import play.mvc.Controller;
  * Time: 10:30
  * To change this template use File | Settings | File Templates.
  */
-public class DocumentController extends Controller {
+@CRUD.For(Document.class)
+public class DocumentController extends CRUD {
 }

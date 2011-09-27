@@ -1,5 +1,7 @@
 package controllers;
 
+import models.CollegeClass;
+
 /**
  * Created by IntelliJ IDEA.
  * User: dev
@@ -7,5 +9,6 @@ package controllers;
  * Time: 10:26
  * To change this template use File | Settings | File Templates.
  */
+@CRUD.For(CollegeClass.class)
 public class CollegeClassesController extends CRUD {
 }

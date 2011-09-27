@@ -7,5 +7,9 @@ package controllers;
  * Time: 10:16
  * To change this template use File | Settings | File Templates.
  */
+
+import models.Teacher;
+
+@CRUD.For(Teacher.class)
 public class TeachersController extends CRUD {
 }

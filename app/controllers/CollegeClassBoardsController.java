@@ -1,5 +1,7 @@
 package controllers;
 
+import models.CollegeClassDashBoard;
+
 /**
  * Created by IntelliJ IDEA.
  * User: dev
@@ -7,5 +9,6 @@ package controllers;
  * Time: 10:27
  * To change this template use File | Settings | File Templates.
  */
+@CRUD.For(CollegeClassDashBoard.class)
 public class CollegeClassBoardsController extends CRUD {
 }

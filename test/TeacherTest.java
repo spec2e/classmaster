@@ -22,10 +22,12 @@ public class TeacherTest extends AbstractClassMasterTest {
         List<Teacher> teachers = Teacher.findAll();
         assertEquals(2, teachers.size());
 
-        for (Teacher teacher : teachers) {
-            int coursesCount = teacher.courses.size();
-            System.out.println("coursesCount = " + coursesCount);
-        }
+        Teacher teacher = teachers.get(0);
+        assertEquals("Pia Vibeke Borch", teacher.firstName);
+
+        teacher = teachers.get(1);
+        assertEquals("Annette", teacher.firstName);
+
 
     }
 }

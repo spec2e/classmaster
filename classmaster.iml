@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
+    <content url="file://C:/tools/play-1.2.3/modules/crud">
+      <sourceFolder url="file://C:/tools/play-1.2.3/modules/crud/app" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
@@ -20,13 +23,13 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="PlayFramework Dependecies">
+      <library name="PlayFramework Dependencies">
         <CLASSES>
           <root url="file://C:/tools/play-1.2.3/framework/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://C:/tools/play-1.2.3/framework/lib" recursive="false" />
+        <jarDirectory url="file://c:/tools/play-1.2.3/framework/lib" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -35,7 +38,9 @@
           <root url="jar://c:/tools/play-1.2.3/framework/play-1.2.3.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://C:/tools/play-1.2.3/framework/src" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
